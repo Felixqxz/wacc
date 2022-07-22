@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+# Ruby front-end for your compiler.
+# You are free to change the language used for this script,
+# but do *not* change its name.
+
+java -cp target/classes:lib/antlr-4.9.1-complete.jar src/main/java/Main.java "$1"
+exit $?
